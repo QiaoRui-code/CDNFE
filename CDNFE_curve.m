@@ -38,15 +38,15 @@ title('CDNFE scores of DNBs for CESC ','FontName', 'Arial', 'FontSize', 10);
 
 
 
-% ´´½¨Í¼ĞÎ´°¿Ú
+% åˆ›å»ºå›¾å½¢çª—å£
 figure('NumberTitle', 'off', 'Name', 'The landscapes of DNB for data','Position', [100, 100,400,400]);
 
-% »æÖÆÈÈÍ¼
+% ç»˜åˆ¶çƒ­å›¾
 surf([1:size(abs(data_entropy),2)], [1:size(abs(data_entropy),1)], abs(data_entropy));
 
-% ÉèÖÃ×ø±êÖáºÍ±êÇ©
-set(gca, 'XTick', 1:4,'LineWidth',0.8);  % ¼ÙÉèÓĞ4¸öÊ±¼äµã»òÌõ¼ş
-B = {'I'  'II'  'III'  'IV'};  % Ê±¼äµã»òÌõ¼şµÄ±êÇ©
+% è®¾ç½®åæ ‡è½´å’Œæ ‡ç­¾
+set(gca, 'XTick', 1:4,'LineWidth',0.8);  % å‡è®¾æœ‰4ä¸ªæ—¶é—´ç‚¹æˆ–æ¡ä»¶
+B = {'I'  'II'  'III'  'IV'};  % æ—¶é—´ç‚¹æˆ–æ¡ä»¶çš„æ ‡ç­¾
 set(gca, 'XTickLabel', B);
 xlabel('Time','FontName', 'Arial', 'FontSize', 7);
 ylabel('Gene','FontName', 'Arial', 'FontSize', 7);
@@ -58,7 +58,7 @@ zlabel('Score','FontName', 'Arial', 'FontSize', 7);
 %print -dpdf -painters test.pdf
 
 
-% Ìí¼Ó±êÌâºÍ×ÅÉ«
+% æ·»åŠ æ ‡é¢˜å’Œç€è‰²
 title('The landscapes of DNB for CESC','FontName', 'Arial', 'FontSize', 7);
 %exportgraphics(gcf,'peaks.pdf','ContentType','vector');
 shading interp;
